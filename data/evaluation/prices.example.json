@@ -1,0 +1,17 @@
+{
+  "openai/YOUR_EXACT_MODEL_ID": {
+    "input_per_million": null,
+    "output_per_million": null
+  },
+  "anthropic/YOUR_EXACT_MODEL_ID": {
+    "input_per_million": null,
+    "output_per_million": null
+  },
+  "groq/YOUR_EXACT_MODEL_ID": {
+    "input_per_million": null,
+    "output_per_million": null
+  },
+  "openai/text-embedding-3-small": {
+    "input_per_million": null
+  }
+}

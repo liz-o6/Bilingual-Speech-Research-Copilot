@@ -1,0 +1,22 @@
+[
+  {
+    "id": "rag-01",
+    "question": "In the longitudinal Head Start study of Spanish-English bilingual preschoolers, how did speech accuracy and error rates change over one year, and did all sound categories improve? Use Research to retrieve local paper evidence, cite sources, and answer in English. Do not search the web."
+  },
+  {
+    "id": "rag-02",
+    "question": "In the study of English vowel perception in Spanish-English bilingual preschoolers, how did input diversity interact with English exposure, and how did bilingual vowel perception compare with monolingual perception? Use Research to retrieve local paper evidence, cite sources, and answer in English. Do not search the web."
+  },
+  {
+    "id": "rag-03",
+    "question": "For bilingual Spanish-English preschoolers, how did combining phonological measures within and across languages affect diagnostic accuracy, and was the same benefit found for monolingual children? Use Research to retrieve local paper evidence, cite sources, and answer in English. Do not search the web."
+  },
+  {
+    "id": "rag-04",
+    "question": "In the study of initial consonant deletion in Spanish-English bilingual children with speech sound disorders, what quantitative group differences were found and what did the qualitative analysis suggest? Use Research to retrieve local paper evidence, cite sources, and answer in English. Do not search the web."
+  },
+  {
+    "id": "rag-05",
+    "question": "In the community language exposure study of Spanish-English bilingual and functional English monolingual children, how did English voiced and voiceless stop VOT differ between groups, and what did similar pre-voicing suggest? Use Research to retrieve local paper evidence, cite sources, and answer in English. Do not search the web."
+  }
+]

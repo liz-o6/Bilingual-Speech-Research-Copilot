@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speech Research · Research Assistant</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <script type="module" src="/static/js/app.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="/" aria-label="Speech Research home"><span class="logo">S</span><span>Speech Research<small>BILINGUAL SPEECH · RESEARCH ASSISTANT</small></span></a><a class="docs" href="/docs" target="_blank" rel="noopener">API docs ↗</a></header>
+  <main>
+    <section class="intro"><div class="eyebrow">CSCI 599 / MULTI-AGENT RESEARCH</div><h1>From questions to grounded answers.</h1><p>Explore papers, query data, and synthesize findings. Inspect every step and its sources.</p></section>
+    <section class="composer" aria-label="Research question">
+      <form id="question-form"><label for="query">What would you like to explore?</label><textarea id="query" name="query" maxlength="4000" rows="3" placeholder="Example: Retrieve evidence on bilingual child speech development from local papers. Summarize two findings with citations. Do not search the web." required></textarea>
+      <div class="examples"><span>Try</span><button type="button" data-example="Count papers in the local corpus published in 2020 or later, including 2020.">Paper count</button><button type="button" data-example="Retrieve evidence on bilingual child speech development from local paper text. Summarize two findings with citations. Do not search the web.">Local evidence</button><button type="button" data-example="First use Data to count local papers published in 2020 or later. Then use Research to find evidence on bilingual child speech development. Finally use Summary to combine the count and findings, preserving citations.">Multi-agent workflow</button></div>
+      <div class="form-footer"><span>Each question is independent · Submitting calls model APIs</span><div class="actions"><button id="reset" type="button" class="quiet">Reset</button><button id="stop" type="button" class="quiet" disabled>Stop</button><button id="submit" type="submit" class="primary">Start research <span aria-hidden="true">↗</span></button></div></div>
+      </form>
+    </section>
+    <div class="workspace">
+      <section class="panel answer-panel"><div class="panel-heading"><h2>Research answer</h2><div><span id="status" class="badge" role="status">Ready</span><button id="copy" type="button" class="quiet" disabled>Copy</button></div></div>
+        <p id="notice" class="notice" hidden role="alert"></p><p id="answer-note" class="muted">A draft streams while generating, then updates to the final result.</p>
+        <div id="answer" class="answer"><div class="empty"><span class="empty-icon" aria-hidden="true">✳</span><h3>Let the literature inform your answer</h3><p>Ask a question to explore findings and their supporting evidence.</p></div></div>
+        <dl id="metrics" class="metrics" hidden></dl>
+      </section>
+      <aside class="panel trace-panel"><div class="panel-heading"><h2>Execution trace</h2><span id="trace-count" class="muted">0 events</span></div><p class="muted trace-hint">Follow task delegation, model routing, and tool calls.</p><ol id="traces" class="traces"></ol><p id="trace-empty" class="empty-small">Routing decisions and tool calls will appear here.</p></aside>
+    </div>
+    <section class="panel sources-panel"><div class="panel-heading"><h2>Sources & citations <span id="source-count" class="count">0</span></h2><span class="muted">Select a citation in the answer to inspect its source</span></div><div id="sources" class="sources"></div><p id="source-empty" class="empty-small">Sources will appear when this request finishes.</p></section>
+    <footer>Research · Data · Summary <span>Single-turn workspace / No memory across questions</span></footer>
+  </main>
+</body>
+</html>

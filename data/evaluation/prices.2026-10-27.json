@@ -1,0 +1,19 @@
+{
+  "openai/gpt-5.4-nano": {
+    "input_per_million": 0.2,
+    "output_per_million": 1.25,
+    "cached_input_per_million": 0.02
+  },
+  "anthropic/claude-haiku-5-5": {
+    "input_per_million": 0.1,
+    "output_per_million": 0.5
+  },
+  "openai/text-embedding-3-small": {
+    "input_per_million": 0.02
+  },
+  "groq/qwen/qwen3.8-27b": {
+    "input_per_million": null,
+    "output_per_million": null,
+    "accounting_basis": "Groq cost: The dashboard showed approximately $0.23 on October 26 and $0.02 on October 27, as reported by the project owner. These amounts include development and testing beyond this comparison. The cost attributable to the three Groq comparison requests could not be isolated, so it is reported as N/A. Token usage is recorded for reproducibility. The approximately $0.25 account-wide amount is not added to the comparison subtotal."
+  }
+}
